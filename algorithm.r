@@ -17,9 +17,7 @@ FitnessFunction <- function(expr) {
   return (result)
 }
 
-#Run the genetic algorithm
+#Run the genetic algorithm and show the results
 geneticAlgorithm <- GrammaticalEvolution(grammarDef, FitnessFunction, iterations = 100)
 print(geneticAlgorithm)
 
-#Show the best expression and the best fitness
-best.expression <- geneticAlgorithm$best$expression
